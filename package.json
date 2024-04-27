@@ -1,0 +1,31 @@
+{
+  "name": "template-tailwind-wordpress",
+  "version": "1.0.0",
+  "description": "um template criado pra desenvolvedores da Colina Tech, em tailwindcss",
+  "main": "index.js",
+  "author": "Colina Tech",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.2",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "log-symbols": "^6.0.0",
+    "postcss": "^8.4.32",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "gulp-webp": "^4.0.0",
+    "tailwindcss": "^3.4.0"
+  }
+}

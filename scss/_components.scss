@@ -1,0 +1,103 @@
+@layer components{
+  .btn{
+    @apply bg-blue text-white inline-flex py-3 px-6 items-center justify-center gap-2.5 rounded-full hover:scale-105 transition-all;
+
+    &.secondary{
+      @apply bg-transparent text-blue border-solid border border-blue hover:bg-blue hover:text-white
+    }
+  }
+
+  .accordion {
+    @apply py-2;
+
+    .accordion-item {
+      @apply overflow-hidden relative border-b-[1px] border-solid border-[#E3E3E3] last:border-none;
+
+      &.active {
+        .accordion-header {
+          svg{
+            @apply rotate-180;
+          }
+        }
+        .accordion-content {
+          @apply max-h-screen duration-300 ease-in-out opacity-100;
+        }
+      }
+
+      .accordion-header {
+        @apply flex items-center justify-between gap-3 cursor-pointer my-2.5 max-w-[512] w-full pr-4;
+      }
+
+      svg {
+        @apply translate-x-0 duration-300 ease-in-out object-contain;
+      }
+      
+      h5 {
+        @apply text-gray text-lg;
+      }  
+    }
+      
+    .accordion-content {
+      @apply h-auto max-h-0 opacity-0 duration-200 ease-linear;
+
+      p {
+        @apply pb-[1.6rem] leading-snug;
+      }
+    }
+  }
+
+  .etapa-de-projeto{
+    @apply hover:scale-110 transition-all rounded-3xl;
+
+    &:hover > :nth-child(2){
+      @apply -mt-10 transition-all;
+    }
+  }
+}
+
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  @apply bg-blue rounded-full flex items-center justify-center size-10 hover:scale-110 hover:shadow-sm hover:bg-blue-900 transition-all;
+  font-size: 16px !important;
+  font-weight: 950 !important;
+  color: #fff;
+  padding: 16px;
+}
+
+.testemonial-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  @apply bg-yellow transition-all;
+}
+
+.y-grad{
+  background: hsla(42, 100%, 49%, 1);
+
+  background: radial-gradient(circle, hsla(42, 100%, 49%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  background: -moz-radial-gradient(circle, hsla(42, 100%, 49%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  background: -webkit-radial-gradient(circle, hsla(42, 100%, 49%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  filter: gradient( startColorstr="#FBAF00", endColorstr="#F9FBFF", GradientType=1 );
+}
+.r-grad{
+  background: hsla(338, 91%, 65%, 1);
+
+  background: radial-gradient(circle, hsla(338, 91%, 65%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  background: -moz-radial-gradient(circle, hsla(338, 91%, 65%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  background: -webkit-radial-gradient(circle, hsla(338, 91%, 65%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  filter: gradient( startColorstr="#F75590", endColorstr="#F9FBFF", GradientType=1 );
+}
+.o-grad{
+  background: hsla(31, 81%, 51%, 1);
+
+  background: radial-gradient(circle, hsla(31, 81%, 51%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  background: -moz-radial-gradient(circle, hsla(31, 81%, 51%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  background: -webkit-radial-gradient(circle, hsla(31, 81%, 51%, 1) 0%, rgba(250, 252, 255, 0) 57%);
+
+  filter: gradient( startColorstr="#E8871E", endColorstr="#F9FBFF", GradientType=1 );
+}

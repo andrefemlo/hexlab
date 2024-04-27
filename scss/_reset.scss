@@ -1,0 +1,79 @@
+* {
+    @apply m-0 p-0 box-border border-none outline-none font-normal antialiased align-top font-sans;
+    text-decoration: none;
+}
+
+html {
+    @apply scroll-smooth overflow-x-hidden overflow-y-visible;
+    font-size: 100%;
+}
+
+body{
+    @apply bg-[#F9FBFF] overflow-x-hidden;
+}
+
+img, figure {
+    @apply max-w-full block h-fit;
+}
+figcaption{
+    @apply text-center;
+}
+
+button {
+    @apply cursor-pointer bg-transparent border-0;
+}
+
+span{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+
+// fonts
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+}
+h1 {
+    @apply text-7xl leading-[56px] md:leading-tight;
+}
+
+h2 {
+    @apply text-6xl leading-[40px] md:text-2xl;
+    line-height: 1.325;
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+p, a {
+    // @apply font-normal leading-snug;
+    // font-size: 16px;
+    // line-height: 20px;
+}
+
+small {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.caption{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.subtitle{
+    @apply text-xl md:text-lg;
+}

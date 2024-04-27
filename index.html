@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexLab</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/plugins.css">
+
+</head>
+    <body>
+        
+        <header id="js-header" onscroll="fixedMenu()">
+            <nav class="py-8">
+                <div class="container flex justify-between items-center">
+
+                    <a href="../"><img src="./assets/webp/HexLab Logo.webp" alt="Logo"></a>
+                    
+                    <div class="hidden md:flex gap-10 items-center" id="desktop-header">
+                        <ul class="flex items-center justify-center gap-8">
+                            <li>Início</li>
+                            <li>Sobre Nós</li>
+                            <li>Nossos Serviços</li>
+                            <li>Nossos Projetos</li>
+                            <!-- <li>Blog</li> -->
+                        </ul>
+
+                        <a href="https://wa.me/5584991651954" class="btn primary">Entre em Contato</a>
+                    </div>
+
+                    
+                    <div class="mobile block md:hidden" id="mobile-header">
+                        <button class="hamburger hamburger--collapse hamburger-outside" type="button"
+                        aria-label="Menu" aria-controls="navigation" id="js-btn-menu-mobile" onclick="openMobileSidebar()">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+
+                        <nav id="navigation" style="display: ;">
+                            <button class="hamburger hamburger--collapse is-active hamburger-sidebar" type="button"
+                            aria-label="Menu" aria-controls="navigation" onclick="closeMobileSidebar()" id="closeButton">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        
+                            <div>
+                                <ul class="">
+                                    <li>Início</li>
+                                    <li>Sobre Nós</li>
+                                    <li>Nossos Serviços</li>
+                                    <li>Nossos Projetos</li>
+                                </ul>
+                            </div>
+                        
+                            <a href="https://wa.me/5584991651954" class="btn primary">
+                                Entre em contato
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="pt-32">
+            <section class="hero relative container">
+                <div class="animate-floating y-grad size-96 absolute right-0 top-0 "></div>
+                <div class="animate-floating o-grad size-80 absolute right-10 top-16 "></div>
+                <div class="animate-floating r-grad size-96 absolute left-0 top-48 "></div>
+                
+                <div class="container *:text-center flex flex-col items-center justify-center gap-4 pt-10 relative">
+                    <h1 class="text-7xl max-sm:text-5xl">Nós somos uma<br>agencia de<br>Sites!</h1>
+                    <p>Temos diversas soluções<br> estratégicas e tecnológicas para<br>ajudar a impulsionar o seu negócio!</p>
+                    <a href="https://wa.me/5584991651954" class="btn mt-4">Entre em contato</a>
+                </div>
+            </section>
+
+            <section>
+                <div class="container py-10 flex items-center justify-center flex-wrap gap-8 max-sm:gap-4 relative">
+                    <img class="animate-float absolute left-80 -ml-28 bottom-10 opacity-60 size-20" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy">
+                    <img class="animate-float absolute left-1/3 ml-24 top-10 opacity-60 size-10" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy">
+                    <img class="animate-float absolute left-full -ml-72 bottom-16 opacity-60 size-16" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy">
+
+                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem]" src="./assets/webp/hero-image(1).webp" alt="Imagem de projeto concluído" loading="lazy">
+                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem] translate-y-8" src="./assets/webp/hero-image(2).webp" alt="Imagem de projeto concluído" loading="lazy">
+                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem]" src="./assets/webp/hero-image(3).webp" alt="Imagem de projeto concluído" loading="lazy">
+                </div>
+            </section>
+
+            <section id="especialidades">
+                <div class="container py-16 flex flex-wrap lg:flex-nowrap">
+
+                    <div class="flex flex-col justify-center items-center lg:items-start">
+                        <h3 class="text-blue font-medium pb-2">Nossas especialidades</h3>
+                        <h2 class="text-4xl lg:text-6xl text-center lg:text-start">Nós somos um time atenados com as novas ideias do mercado.</h2>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 *:text-center gap-4 max-sm:gap-0">
+
+                        <div class="card p-4 md:p-8 flex flex-col items-center">
+                            <img class="size-24 object-contain" src="./assets/webp/Webdesign Icon.webp" alt="WebDesign Icon" loading="lazy">
+                            <span class="text-blue pt-2 font-medium text-lg">Web Design</span>
+                            <h4 class="text-3xl pb-4">Design de<br>Websites</h4>
+                            <p>Nosso time criativo está a todo vapor produzindo novos sites.</p>
+                        </div>
+
+                        <div class="card p-4 md:p-8 flex flex-col items-center">
+                            <img class="size-24 object-contain" src="./assets/webp/Performance Icon.webp" alt="Fast Icon" loading="lazy">
+                            <span class="text-blue pt-2 font-medium text-lg">Performance</span>
+                            <h4 class="text-3xl pb-4">Foco em<br>performance</h4>
+                            <p>Não nos contentamos somente com beleza. Estamos sempre produzindo sites rápidos.</p>
+                        </div>
+
+                        <div class="card p-4 md:p-8 flex flex-col items-center">
+                            <img class="size-24 object-contain" src="./assets/webp/UIUX Icon.webp" alt="UI/UX Icon" loading="lazy">
+                            <span class="text-blue pt-2 font-medium text-lg">UI/UX</span>
+                            <h4 class="text-3xl pb-4">UI/UX<br>Design</h4>
+                            <p>Utilizamos métricas e padrões de persuação para aumentar sua taxa de conversão.</p>
+                        </div>
+
+                        <div class="card p-4 md:p-8 flex flex-col items-center">
+                            <img class="size-24 object-contain" src="./assets/webp/Acessibility Icon.webp" alt="Acessibility Icon" loading="lazy">
+                            <span class="text-blue pt-2 font-medium text-lg">Acessibilidade</span>
+                            <h4 class="text-3xl pb-4">Sites<br>Acessíveis</h4>
+                            <p>Buscamos usar ferramentas acessíveis para melhorar a experiência de todos os usuários.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="relative" id="diferencial">
+                <div class="r-grad absolute -left-1/4 max-md:left-1/4 top-20 animate-float size-[42rem]"></div>
+                <div class="o-grad absolute -left-1/4 max-md:left-1/4 top-0 animate-float size-[42rem]"></div>
+
+                <div class="container relative *:text-center flex flex-col items-center justify-center">
+                    <img class="w-24" src="./assets/webp/wcus.webp" alt="Favorite Icon" loading="lazy">
+                    <span class="text-blue pt-2 font-medium text-lg">Por que escolher a HexLab?</span>
+                    <h2 class="text-4xl lg:text-6xl">Experiência,<br>Criatividade e Acessibilidade.</h2>
+                    <p class="max-w-lg pb-12 pt-4">
+                        Nós somos uma agência de desenvolvimento digital com berço potiguar que atua desenvolvendo sites em todo o território nacional.<br>
+                        Com foco em desenvolvimento de sites modernos, bonitos, acessíveis, de baixa manutenção, com alta personalidade e foco em SEO, somos referência por onde atuamos.
+                    </p>
+                    <a href="https://wa.me/5584991651954" class="btn secondary">Fale Conosco</a>
+
+                    <div class="pt-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+
+                        <div class="card flex flex-col items-center *:text-center gap-2">
+                            <span class="text-blue font-bold text-6xl">01</span>
+                            <h3 class="text-3xl">+5 Anos de experiência</h3>
+                            <p class="text-base">Já contamos com 5 anos de experiência em desenvolvimento de site, buscando se inovar constantemente na estética e buscando melhores ferramentas de performance dia após dia.</p>
+                        </div>
+
+                        <div class="card flex flex-col items-center *:text-center gap-2">
+                            <span class="text-blue font-bold text-6xl">02</span>
+                            <h3 class="text-3xl">Time Criativo</h3>
+                            <p class="text-base">Nós damos todo o suporte às suas ideias criativas. Buscamos trazer sua identidade ao seu site e o seu site ao mundo.</p>
+                        </div>
+
+                        <div class="card flex flex-col items-center *:text-center gap-2">
+                            <span class="text-blue font-bold text-6xl">03</span>
+                            <h3 class="text-3xl">Nós somos atenciosos.</h3>
+                            <p class="text-base">Moveremos montanhas para trazer as perspectivas dos clientes à vida.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <div class="container py-32 pb-20 flex flex-col items-center *:text-center">
+                    <img class="w-24" src="./assets/webp/Portfolio Icon.webp" alt="Portfólio Icon" loading="lazy">
+                    <span class="text-blue pt-2 font-medium text-lg">Portfolio</span>
+                    <h2 class="text-4xl lg:text-6xl">Confira nossos<br>Cases de Sucesso.</h2>
+                    <p class="pb-12 pt-4">
+                        Confira o que somos capaz de fazer:
+                    </p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
+                                <h4 class="text-2xl">Aceda</h4>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
+                                <h4 class="text-2xl">Aceda</h4>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
+                                <h4 class="text-2xl">Aceda</h4>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
+                                <h4 class="text-2xl">Aceda</h4>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
+                                <h4 class="text-2xl">Aceda</h4>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
+                                <h4 class="text-2xl">Aceda</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="testemunhas">
+                <div class="container pb-20 space-y-8 lg:grid grid-cols-3 md:gap-0 justify-center items-center relative">
+                    <div class="y-grad absolute -right-1/4 -top-96 animate-float size-[42rem] -z-10"></div>
+                    <div class="o-grad absolute -right-1/4 -top-80 animate-float size-[48rem] -z-10"></div>
+
+                    <div class="flex flex-col items-center justify-center lg:block">
+                        <img class="size-20 lg:mb-10" src="./assets/webp/Chat Icon.webp" alt="Chat Icon" loading="lazy">
+                        <span class="text-blue pt-2 font-medium text-lg">Depoimentos</span>
+                        <h2 class="text-4xl lg:text-6xl text-center lg:text-start">
+                            Confira o que falam sobre nossa agência.
+                        </h2>
+                        <div class="flex flex-row gap-16 relative mt-14 w-32">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+
+                    <div class="slider col-span-2 lg:pl-10 justify-center ">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <div class="card-depoimento mx-auto max-w-sm backdrop-blur-3xl bg-white border border-solid border-white bg-opacity-60 p-6 rounded-2xl">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum cum eos ullam sit quibusdam velit pariatur beatae sint eligendi eum vitae numquam ut veniam, veritatis nam voluptate nesciunt rem. Adipisci!</p>
+                                    <p class="text-3xl font-bold pt-4">Lorem Ipsum</p>
+                                    <p class="text-sm font-light">Product Manager</p>
+                                    <div class="flex gap-2 pt-2">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="swiper-slide">
+                                <div class="card-depoimento mx-auto max-w-sm backdrop-blur-3xl bg-white border border-solid border-white bg-opacity-60 p-6 rounded-2xl">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum cum eos ullam sit quibusdam velit pariatur beatae sint eligendi eum vitae numquam ut veniam, veritatis nam voluptate nesciunt rem. Adipisci!</p>
+                                    <p class="text-3xl font-bold pt-4">Lorem Ipsum</p>
+                                    <p class="text-sm font-light">Product Manager</p>
+                                    <div class="flex gap-2 pt-2">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="swiper-slide">
+                                <div class="card-depoimento mx-auto max-w-sm backdrop-blur-3xl bg-white border border-solid border-white bg-opacity-60 p-6 rounded-2xl">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum cum eos ullam sit quibusdam velit pariatur beatae sint eligendi eum vitae numquam ut veniam, veritatis nam voluptate nesciunt rem. Adipisci!</p>
+                                    <p class="text-3xl font-bold pt-4">Lorem Ipsum</p>
+                                    <p class="text-sm font-light">Product Manager</p>
+                                    <div class="flex gap-2 pt-2">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                    </div>
+                                </div>
+                              </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="bg-blue-900 *:text-white">
+            <div class="container flex flex-col justify-center max-sm:items-center max-sm:*:text-center sm:grid sm:grid-cols-2 md:grid-cols-4 py-12 gap-8">
+                <div class="col max-sm:flex max-sm:justify-center">
+                    <img class="w-1/3 md:w-1/2" src="./assets/webp/hexlab-logo-footer.webp" alt="Logo HexLab Brasil" loading="lazy">
+                </div>
+                <div class="col">
+                    <h3 class="text-4xl mb-4">Contato</h3>
+                    <nav>
+                        <ul class="gap-4 flex flex-wrap">
+                            <li><a class="font-light inline-flex gap-2" href="#especialidade"><img class="size-6" src="./assets/webp/google-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acesse nosso Google</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href="#portfolio"><img class="size-6" src="./assets/webp/linkedin-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acesse HexLab no LinkedIn</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href="#diferencial"><img class="size-6" src="./assets/webp/instagram-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acompanhe @hexlabbr no Instagram</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href="#testemunnhas"><img class="size-6" src="./assets/webp/whatsapp-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Fale com a HexLab no whatsapp</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href="#testemunnhas"><img class="size-6" src="./assets/webp/youtube-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acompanhe a HexLab no youtube</p></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col">
+                    <h3 class="text-4xl mb-4">Sobre</h3>
+                    <nav>
+                        <ul>
+                            <li><a class="font-light" href="#especialidade">Especialidades</a></li>
+                            <li><a class="font-light" href="#diferencial">Nosso Diferencial</a></li>
+                            <li><a class="font-light" href="#portfolio">Portólio</a></li>
+                            <li><a class="font-light" href="#testemunnhas">Testemunhas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col">
+                    <h3 class="text-4xl mb-4">HexLab</h3>
+                    <p class="font-light">Hexlab é uma agência digital comprometida com a transformação digital de pequenos e médios negócios.</p>
+                </div>
+            </div>
+
+            <div class="container flex flex-row flex-wrap items-center justify-between py-8 max-md:text-center max-md:justify-center gap-2">
+                <p>
+                    © 2024 | Criado e Idealizado em pela HexLab Brasil.
+                </p>
+                <p>
+                    <a href="./privacidade">Política de Privacidade</a>
+                </p>
+            </div>
+
+        </footer>
+        
+        <div class="whatsapp-button fixed bottom-10 right-10 z-20 bg-blend-hue">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5584991651954&text=Ol%C3%A1,%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HexLab!%20" class="bg-blue size-12 *:size-8 sm:*:size-12 sm:size-20 flex justify-center items-center rounded-full hover:scale-95 hover:bg-blue-900 transition-all drop-shadow-2xl animate-float">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="https://www.w3.org/2000/svg">
+                    <path d="M39.6874 10.2292C37.7774 8.29985 35.5024 6.77015 32.995 5.72928C30.4876 4.68841 27.7981 4.15722 25.0833 4.16667C13.7083 4.16667 4.43742 13.4375 4.43742 24.8125C4.43742 28.4583 5.39575 32 7.18742 35.125L4.27075 45.8333L15.2083 42.9583C18.2291 44.6042 21.6249 45.4792 25.0833 45.4792C36.4583 45.4792 45.7291 36.2083 45.7291 24.8333C45.7291 19.3125 43.5833 14.125 39.6874 10.2292ZM25.0833 41.9792C21.9999 41.9792 18.9791 41.1458 16.3333 39.5833L15.7083 39.2083L9.20825 40.9167L10.9374 34.5833L10.5208 33.9375C8.80772 31.202 7.89813 28.0401 7.89575 24.8125C7.89575 15.3542 15.6041 7.64584 25.0624 7.64584C29.6458 7.64584 33.9583 9.43751 37.1874 12.6875C38.7863 14.2791 40.0535 16.1722 40.9153 18.2571C41.7772 20.3421 42.2167 22.5773 42.2083 24.8333C42.2499 34.2917 34.5416 41.9792 25.0833 41.9792ZM34.4999 29.1458C33.9791 28.8958 31.4374 27.6458 30.9791 27.4583C30.4999 27.2917 30.1666 27.2083 29.8124 27.7083C29.4583 28.2292 28.4791 29.3958 28.1874 29.7292C27.8958 30.0833 27.5833 30.125 27.0624 29.8542C26.5416 29.6042 24.8749 29.0417 22.9166 27.2917C21.3749 25.9167 20.3541 24.2292 20.0416 23.7083C19.7499 23.1875 19.9999 22.9167 20.2708 22.6458C20.4999 22.4167 20.7916 22.0417 21.0416 21.75C21.2916 21.4583 21.3958 21.2292 21.5624 20.8958C21.7291 20.5417 21.6458 20.25 21.5208 20C21.3958 19.75 20.3541 17.2083 19.9374 16.1667C19.5208 15.1667 19.0833 15.2917 18.7708 15.2708H17.7708C17.4166 15.2708 16.8749 15.3958 16.3958 15.9167C15.9374 16.4375 14.6041 17.6875 14.6041 20.2292C14.6041 22.7708 16.4583 25.2292 16.7083 25.5625C16.9583 25.9167 20.3541 31.125 25.5208 33.3542C26.7499 33.8958 27.7083 34.2083 28.4583 34.4375C29.6874 34.8333 30.8124 34.7708 31.7083 34.6458C32.7083 34.5 34.7708 33.3958 35.1874 32.1875C35.6249 30.9792 35.6249 29.9583 35.4791 29.7292C35.3333 29.5 35.0208 29.3958 34.4999 29.1458Z" fill="white"/>
+                </svg> 
+            </a>
+        </div>
+
+    </body>
+    
+    <script src="./js/plugins.js"></script>
+    <script src="./js/all.js"></script>
+</html>

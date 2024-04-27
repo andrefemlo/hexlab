@@ -1,0 +1,130 @@
+header{
+    @apply w-dvw fixed z-50 *:transition-all;
+    &.active{
+        @apply md:p-2 md:px-4;
+
+        nav{
+            @apply md:backdrop-blur-3xl bg-white md:bg-opacity-60 py-3 md:py-6 md:rounded-2xl;
+        }
+    }
+
+    #navigation{
+        @apply fixed w-dvw h-dvh bg-white transition-all px-8 justify-center flex flex-col top-0 left-0 rounded-none;
+
+        > div > ul > li{
+            @apply divide-x divide-blue-900 py-3 first:pt-6 border-b-blue-900 border-b border-solid last:border-none text-center hover:text-blue;
+        }
+
+        .btn{
+            @apply w-fit mt-6 self-center;
+        }
+
+        #closeButton{
+            @apply absolute top-4 right-4;
+        }
+    }
+}
+
+// header{
+//     &#js-header\ white-logo{
+//         .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+//             @apply bg-white;
+//         }
+//     }
+
+//     &.active{
+//         @apply bg-white backdrop-blur-lg bg-opacity-70 fixed;
+
+//         &#js-header\ white-logo{
+//             @apply backdrop-blur-lg bg-opacity-90;
+
+
+//         }
+//     }
+
+//     .desktop{
+//         @apply -ml-60;
+
+//         & > ul > li > a{
+//             @apply py-4;
+//         }
+//     }
+// }
+
+// header{
+//     .main-menu .menu{
+//         @apply flex gap-8 lg:flex-col lg:hidden;
+
+//         li.menu-item-has-children{
+
+//             > ul.sub-menu{
+//                 @apply hidden;
+//             }
+
+//             &:hover{
+//                 > ul.sub-menu{
+//                     @apply flex flex-col absolute top-16 bg-white divide-slate-100 divide-y p-4 rounded-3xl rounded-tl-none;
+
+//                     li{
+//                         @apply py-2 px-4 hover:rounded-full hover:rounded-tl-none transition-all hover:text-white;
+//                     }
+//                 }
+//             }
+//         } 
+//     }
+
+//     .main-menu{
+//         @apply flex;
+//     }
+
+//     nav a{
+//         @apply transition-all duration-300;
+//     }
+    
+//     .mobile{
+//         @apply hidden lg:block;
+
+//         .sub-menu{
+//             @apply hidden pl-4;
+//             padding-bottom: 0 !important;
+//         }
+
+        
+//         #js-btn-menu-mobile{
+//             @apply flex;
+//         }
+        
+//         // .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+//             // @apply bg-purple;
+//         // }
+
+//         #navigation{
+//             @apply hidden h-dvh w-dvw absolute p-10 top-0 left-0 flex-col justify-center;
+            
+//             .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+//                 @apply bg-white opacity-100;
+//             }
+//             .hamburger{
+//                 @apply absolute top-4 right-8;
+//             }
+
+//             ul{
+//                 @apply pb-8 divide-y;
+//                 li{
+//                     @apply py-2 w-full text-white;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .menu-item{
+//     @apply flex items-center;
+// }
+// .menu-item-has-children > a{
+//     @apply items-center flex;
+//     &::after{
+//         content: '̬';
+//         @apply text-[30px] flex items-center leading-none -mt-6 pl-2;
+//     }
+// }

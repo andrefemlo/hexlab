@@ -1,0 +1,14 @@
+// TailwindCSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'reset';
+
+
+@import 'patterns';
+@import 'components';
+
+// General
+@import 'header';
+
