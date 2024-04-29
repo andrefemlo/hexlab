@@ -14,10 +14,10 @@
     <body>
         
         <header id="js-header" onscroll="fixedMenu()">
-            <nav class="py-8">
+            <nav class="py-6 md:py-8">
                 <div class="container flex justify-between items-center">
 
-                    <a href="../"><img src="./assets/webp/HexLab Logo.webp" alt="Logo"></a>
+                    <a href="../"><img src="./assets/webp/HexLab Logo.webp" alt="Logo" id="header-logo" width="40" height="43"></a>
                     
                     <div class="hidden md:flex gap-10 items-center" id="desktop-header">
                         <ul class="flex items-center justify-center gap-8">
@@ -66,7 +66,7 @@
             </nav>
         </header>
 
-        <main class="pt-32">
+        <main class="pt-32 overflow-hidden">
             <section class="hero relative container">
                 <div class="animate-floating y-grad size-96 absolute right-0 top-0 "></div>
                 <div class="animate-floating o-grad size-80 absolute right-10 top-16 "></div>
@@ -81,13 +81,13 @@
 
             <section>
                 <div class="container py-10 flex items-center justify-center flex-wrap gap-8 max-sm:gap-4 relative">
-                    <img class="animate-float absolute left-80 -ml-28 bottom-10 opacity-60 size-20" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy">
-                    <img class="animate-float absolute left-1/3 ml-24 top-10 opacity-60 size-10" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy">
-                    <img class="animate-float absolute left-full -ml-72 bottom-16 opacity-60 size-16" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy">
+                    <img class="animate-float absolute left-80 -ml-28 bottom-10 opacity-60 w-20 h-auto" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy" width="80" height="77">
+                    <img class="animate-float absolute left-1/3 ml-24 top-10 opacity-60 w-10 h-auto" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy" width="80" height="77">
+                    <img class="animate-float absolute left-full -ml-72 bottom-16 opacity-60 w-16 h-auto" src="./assets/webp/star.webp" alt="imagem decorativa da estrela de 4 pontas" loading="lazy" width="80" height="77">
 
-                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem]" src="./assets/webp/hero-image(1).webp" alt="Imagem de projeto concluído" loading="lazy">
-                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem] translate-y-8" src="./assets/webp/hero-image(2).webp" alt="Imagem de projeto concluído" loading="lazy">
-                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem]" src="./assets/webp/hero-image(3).webp" alt="Imagem de projeto concluído" loading="lazy">
+                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem]" src="./assets/webp/hero-image(1).webp" alt="Imagem de projeto concluído" loading="lazy" width="1061" height="1591">
+                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem] translate-y-8" src="./assets/webp/hero-image(2).webp" alt="Imagem de projeto concluído" loading="lazy" width="5300" height="3975">
+                    <img class="max-sm:w-24 max-sm:h-48 relative w-56 h-96 object-cover rounded-[12rem]" src="./assets/webp/hero-image(3).webp" alt="Imagem de projeto concluído" loading="lazy" width="1200" height="800">
                 </div>
             </section>
 
@@ -102,28 +102,28 @@
                     <div class="grid md:grid-cols-2 *:text-center gap-4 max-sm:gap-0">
 
                         <div class="card p-4 md:p-8 flex flex-col items-center">
-                            <img class="size-24 object-contain" src="./assets/webp/WebDesign Icon.webp" alt="WebDesign Icon" loading="lazy">
+                            <img class="size-24 object-contain" src="./assets/webp/WebDesign Icon.webp" alt="WebDesign Icon" loading="lazy" width="200" height="200">
                             <span class="text-blue pt-2 font-medium text-lg">Web Design</span>
                             <h3 class="text-3xl pb-4">Design de<br>Websites</h3>
                             <p>Nosso time criativo está a todo vapor produzindo novos sites.</p>
                         </div>
 
                         <div class="card p-4 md:p-8 flex flex-col items-center">
-                            <img class="size-24 object-contain" src="./assets/webp/Performance Icon.webp" alt="Fast Icon" loading="lazy">
+                            <img class="size-24 object-contain" src="./assets/webp/Performance Icon.webp" alt="Fast Icon" loading="lazy" width="200" height="200">
                             <span class="text-blue pt-2 font-medium text-lg">Performance</span>
                             <h3 class="text-3xl pb-4">Foco em<br>performance</h3>
                             <p>Não nos contentamos somente com beleza. Estamos sempre produzindo sites rápidos.</p>
                         </div>
 
                         <div class="card p-4 md:p-8 flex flex-col items-center">
-                            <img class="size-24 object-contain" src="./assets/webp/UIUX Icon.webp" alt="UI/UX Icon" loading="lazy">
+                            <img class="size-24 object-contain" src="./assets/webp/UIUX Icon.webp" alt="UI/UX Icon" loading="lazy" width="200" height="200">
                             <span class="text-blue pt-2 font-medium text-lg">UI/UX</span>
                             <h3 class="text-3xl pb-4">UI/UX<br>Design</h3>
                             <p>Utilizamos métricas e padrões de persuação para aumentar sua taxa de conversão.</p>
                         </div>
 
                         <div class="card p-4 md:p-8 flex flex-col items-center">
-                            <img class="size-24 object-contain" src="./assets/webp/Acessibility Icon.webp" alt="Acessibility Icon" loading="lazy">
+                            <img class="size-24 object-contain" src="./assets/webp/Acessibility Icon.webp" alt="Acessibility Icon" loading="lazy" width="200" height="200">
                             <span class="text-blue pt-2 font-medium text-lg">Acessibilidade</span>
                             <h3 class="text-3xl pb-4">Sites<br>Acessíveis</h3>
                             <p>Buscamos usar ferramentas acessíveis para melhorar a experiência de todos os usuários.</p>
@@ -139,7 +139,7 @@
                 <div class="o-grad absolute -left-1/4 max-md:left-1/4 top-0 animate-float size-[42rem]"></div>
 
                 <div class="container relative *:text-center flex flex-col items-center justify-center">
-                    <img class="w-24" src="./assets/webp/wcus.webp" alt="Favorite Icon" loading="lazy">
+                    <img class="w-24" src="./assets/webp/wcus.webp" alt="Favorite Icon" loading="lazy" width="200" height="200">
                     <span class="text-blue pt-2 font-medium text-lg">Por que escolher a HexLab?</span>
                     <h2 class="text-4xl lg:text-6xl">Experiência,<br>Criatividade e Acessibilidade.</h2>
                     <p class="max-w-lg pb-12 pt-4">
@@ -173,8 +173,8 @@
             </section>
 
             <section id="portfolio" data-aos="fade-up" data-aos-delay="300ms">
-                <div class="container py-32 pb-20 flex flex-col items-center *:text-center">
-                    <img class="w-24" src="./assets/webp/Portfolio Icon.webp" alt="Portfólio Icon" loading="lazy">
+                <div class="container py-32 pb-20 flex flex-col items-center *:text-center relative z-10">
+                    <img class="w-24" src="./assets/webp/Portfolio Icon.webp" alt="Portfólio Icon" loading="lazy" width="200" height="200">
                     <span class="text-blue pt-2 font-medium text-lg">Portfolio</span>
                     <h2 class="text-4xl lg:text-6xl">Confira nossos<br>Cases de Sucesso.</h2>
                     <p class="pb-12 pt-4">
@@ -184,63 +184,75 @@
 
                         <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
                             <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
-                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
-                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
-                                <h4 class="text-2xl">Aceda</h4>
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy" width="400" height="400">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento da template e da Home</span>
+                                <h3 class="text-2xl">ONG Aceda</h3>
                             </div>
                         </div>
 
                         <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <a href="https://associacaoprover.org/" rel="opener" target="_blank">
                             <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
-                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
-                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
-                                <h4 class="text-2xl">Aceda</h4>
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/gabriela-nobrega-thumb.webp" alt="Portfolio Thumbnail" loading="lazy" width="400" height="400">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento e Performance</span>
+                                <h3 class="text-2xl">Dra. Gabriela Nóbrega</h3>
                             </div>
+                            </a>
                         </div>
 
                         <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <a href="https://associacaoprover.org/" rel="opener" target="_blank">
                             <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
-                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
-                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
-                                <h4 class="text-2xl">Aceda</h4>
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/prover-thumb.webp" alt="Portfolio Thumbnail" loading="lazy" width="400" height="400">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento e Design</span>
+                                <h3 class="text-2xl">ONG Associação Prover</h3>
                             </div>
+                            </a>
+                        </div>
+                        
+                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <a href="https://vanessasantosadv.com.br/" rel="opener" target="_blank">
+                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/vanessasantos-thumb.webp" alt="Portfolio Thumbnail" loading="lazy" width="400" height="400">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento e Design</span>
+                                <h3 class="text-2xl">Advogada Vanessa Santos</h3>
+                            </div>
+                            </a>
                         </div>
 
                         <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <a href="https://inovanet.inf.br/" rel="opener" target="_blank">
                             <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
-                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
-                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
-                                <h4 class="text-2xl">Aceda</h4>
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/inovanet-thumb.webp" alt="Portfolio Thumbnail" loading="lazy" width="400" height="400">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento e Design</span>
+                                <h3 class="text-2xl">Inovanet</h3>
                             </div>
+                            </a>
                         </div>
 
                         <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
+                            <a href="https://layerlinkbrasil.com.br/" rel="opener" target="_blank">
                             <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
-                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
-                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
-                                <h4 class="text-2xl">Aceda</h4>
+                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/layerlink-brasil-thumb.webp" alt="Portfolio Thumbnail" loading="lazy" width="400" height="400">
+                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento e Design</span>
+                                <h3 class="text-2xl">LayerLink Brasil</h3>
                             </div>
-                        </div>
-
-                        <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
-                            <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
-                                <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/aceda-thumb.webp" alt="Portfolio Thumbnail" loading="lazy">
-                                <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento</span>
-                                <h4 class="text-2xl">Aceda</h4>
-                            </div>
+                            </a>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <section id="testemunhas" data-aos="fade-up" data-aos-delay="300ms">
+            <!-- <section id="testemunhas">
                 <div class="container pb-20 space-y-8 lg:grid grid-cols-3 md:gap-0 justify-center items-center relative">
-                    <div class="y-grad absolute -right-1/4 -top-96 animate-float size-[42rem] -z-10"></div>
-                    <div class="o-grad absolute -right-1/4 -top-80 animate-float size-[48rem] -z-10"></div>
+                    <div class="absolute -right-1/4 -top-80 animate-floating -z-10">
+                        <div class="y-grad size-[42rem]"></div>
+                        <div class="o-grad mt-16 size-[48rem]"></div>
+                    </div>
 
-                    <div class="flex flex-col items-center justify-center lg:block">
-                        <img class="size-20 lg:mb-10" src="./assets/webp/Chat Icon.webp" alt="Chat Icon" loading="lazy">
+                    <div class="flex flex-col items-center justify-center lg:block" data-aos="fade-up" data-aos-delay="300ms">
+                        <img class="size-20 lg:mb-10" src="./assets/webp/Chat Icon.webp" alt="Chat Icon" loading="lazy" width="200" height="200">
                         <span class="text-blue pt-2 font-medium text-lg">Depoimentos</span>
                         <h2 class="text-4xl lg:text-6xl text-center lg:text-start">
                             Confira o que falam sobre nossa agência.
@@ -251,7 +263,7 @@
                         </div>
                     </div>
 
-                    <div class="slider col-span-2 lg:pl-10 justify-center ">
+                    <div class="slider col-span-2 lg:pl-10 justify-center" data-aos="fade-up" data-aos-delay="300ms">
                         <div class="swiper">
                             <div class="swiper-wrapper">
 
@@ -261,11 +273,11 @@
                                     <p class="text-3xl font-bold pt-4">Lorem Ipsum</p>
                                     <p class="text-sm font-light">Product Manager</p>
                                     <div class="flex gap-2 pt-2">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
                                     </div>
                                 </div>
                               </div>
@@ -276,11 +288,11 @@
                                     <p class="text-3xl font-bold pt-4">Lorem Ipsum</p>
                                     <p class="text-sm font-light">Product Manager</p>
                                     <div class="flex gap-2 pt-2">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
                                     </div>
                                 </div>
                               </div>
@@ -291,11 +303,11 @@
                                     <p class="text-3xl font-bold pt-4">Lorem Ipsum</p>
                                     <p class="text-sm font-light">Product Manager</p>
                                     <div class="flex gap-2 pt-2">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
-                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
+                                        <img src="./assets/webp/star.webp" alt="Star icon" loading="lazy" width="21" height="20">
                                     </div>
                                 </div>
                               </div>
@@ -305,24 +317,24 @@
                     </div>
                     
                 </div>
-            </section>
+            </section> -->
 
         </main>
 
         <footer class="bg-blue-900 *:text-white">
             <div class="container flex flex-col justify-center max-sm:items-center max-sm:*:text-center sm:grid sm:grid-cols-2 md:grid-cols-4 py-12 gap-8">
                 <div class="col max-sm:flex max-sm:justify-center">
-                    <img class="w-1/3 md:w-1/2" src="./assets/webp/hexlab-logo-footer.webp" alt="Logo HexLab Brasil" loading="lazy">
+                    <img class="w-1/3 md:w-1/2" src="./assets/webp/hexlab-logo-footer.webp" alt="Logo HexLab Brasil" loading="lazy" width="256" height="256">
                 </div>
                 <div class="col">
                     <h3 class="text-4xl mb-4">Contato</h3>
                     <nav>
                         <ul class="gap-4 flex flex-wrap">
-                            <li><a class="font-light inline-flex gap-2" href="#especialidade"><img class="size-6" src="./assets/webp/google-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acesse nosso Google</p></a></li>
-                            <li><a class="font-light inline-flex gap-2" href="#portfolio"><img class="size-6" src="./assets/webp/linkedin-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acesse HexLab no LinkedIn</p></a></li>
-                            <li><a class="font-light inline-flex gap-2" href="#diferencial"><img class="size-6" src="./assets/webp/instagram-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acompanhe @hexlabbr no Instagram</p></a></li>
-                            <li><a class="font-light inline-flex gap-2" href="#testemunnhas"><img class="size-6" src="./assets/webp/whatsapp-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Fale com a HexLab no whatsapp</p></a></li>
-                            <li><a class="font-light inline-flex gap-2" href="#testemunnhas"><img class="size-6" src="./assets/webp/youtube-icon.webp" alt="Ícone de Rede Social"><p class="sr-only">Acompanhe a HexLab no youtube</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href="#especialidade"><img class="size-6" src="./assets/webp/google-icon.webp" alt="Ícone de Rede Social" width="48" height="48"><p class="sr-only">Acesse nosso Google</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href="#portfolio"><img class="size-6" src="./assets/webp/linkedin-icon.webp" alt="Ícone de Rede Social" width="48" height="48"><p class="sr-only">Acesse HexLab no LinkedIn</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href="#diferencial"><img class="size-6" src="./assets/webp/instagram-icon.webp" alt="Ícone de Rede Social" width="48" height="48"><p class="sr-only">Acompanhe @hexlabbr no Instagram</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href=""><img class="size-6" src="./assets/webp/whatsapp-icon.webp" alt="Ícone de Rede Social" width="48" height="48"><p class="sr-only">Fale com a HexLab no whatsapp</p></a></li>
+                            <li><a class="font-light inline-flex gap-2" href=""><img class="size-6" src="./assets/webp/youtube-icon.webp" alt="Ícone de Rede Social" width="48" height="48"><p class="sr-only">Acompanhe a HexLab no youtube</p></a></li>
                         </ul>
                     </nav>
                 </div>

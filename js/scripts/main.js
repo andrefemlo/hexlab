@@ -67,7 +67,7 @@ window.addEventListener("scroll", function () {
 // Menu mobile;
 function openMobileSidebar() {
   var item = document.querySelector('#navigation');
-  item.removeAttribute('style', 'display: flex;');
+  item.removeAttribute('style', 'display: none;');
 }
 
 function closeMobileSidebar() {

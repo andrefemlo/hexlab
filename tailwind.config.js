@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue'      : '#3C70FF',
-        'blue-900'      : '#1C2125',
+        'blue'      : '#325ED5',
+        'blue-dt'   : '#3C70FF',
+        'blue-900'  : '#1C2125',
         'yellow'    : '#FFB703',
         'rose'      : '#F75590',
         'yellow-400': '#FBAF00',
@@ -39,7 +40,7 @@ module.exports = {
             // transform: 'translateX(-64px)'
           },
           '75%': { 
-            transform: 'translateY(4px)', 
+            transform: 'translateY(32px)', 
             // transform: 'translateX(16px)'
           },
         }
