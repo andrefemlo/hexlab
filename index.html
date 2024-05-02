@@ -21,14 +21,13 @@
                     
                     <div class="hidden md:flex gap-10 items-center" id="desktop-header">
                         <ul class="flex items-center justify-center gap-8">
-                            <li>Início</li>
-                            <li>Sobre Nós</li>
-                            <li>Nossos Serviços</li>
-                            <li>Nossos Projetos</li>
-                            <!-- <li>Blog</li> -->
+                            <li class="hover:text-blue hover:font-semibold transition-all cursor-pointer"><a href="#hero">Início</a></li>
+                            <li class="hover:text-blue hover:font-semibold transition-all cursor-pointer"><a href="#diferencial">Sobre Nós</a></li>
+                            <li class="hover:text-blue hover:font-semibold transition-all cursor-pointer"><a href="#especialidades">Nossos Serviços</a></li>
+                            <li class="hover:text-blue hover:font-semibold transition-all cursor-pointer"><a href="#portfolio">Nossos Projetos</a></li>
                         </ul>
 
-                        <a href="https://wa.me/5584991651954" class="btn primary">Entre em Contato</a>
+                        <a href="https://api.whatsapp.com/send?phone=5584991560738&text=Ol%C3%A1,%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HexLab!%20" class="btn primary">Entre em Contato</a>
                     </div>
 
                     
@@ -49,15 +48,15 @@
                             </button>
                         
                             <div>
-                                <ul class="">
-                                    <li>Início</li>
-                                    <li>Sobre Nós</li>
-                                    <li>Nossos Serviços</li>
-                                    <li>Nossos Projetos</li>
+                                <ul class="" onclick="closeMobileSidebar()">
+                                    <li><a href="#hero">Início</a></li>
+                                    <li><a href="#diferencial">Sobre Nós</a></li>
+                                    <li><a href="#especialidades">Nossos Serviços</a></li>
+                                    <li><a href="#portfolio">Nossos Projetos</a></li>
                                 </ul>
                             </div>
                         
-                            <a href="https://wa.me/5584991651954" class="btn primary">
+                            <a href="https://api.whatsapp.com/send?phone=5584991560738&text=Ol%C3%A1,%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HexLab!%20" class="btn primary">
                                 Entre em contato
                             </a>
                         </nav>
@@ -66,7 +65,7 @@
             </nav>
         </header>
 
-        <main class="pt-32 overflow-hidden">
+        <main class="pt-32 overflow-hidden" id="hero">
             <section class="hero relative container">
                 <div class="animate-floating y-grad size-96 absolute right-0 top-0 "></div>
                 <div class="animate-floating o-grad size-80 absolute right-10 top-16 "></div>
@@ -75,7 +74,7 @@
                 <div class="container *:text-center flex flex-col items-center justify-center gap-4 pt-10 relative">
                     <h1 class="text-7xl max-sm:text-5xl">Nós somos uma<br>agencia de<br>Sites!</h1>
                     <p>Temos diversas soluções<br> estratégicas e tecnológicas para<br>ajudar a impulsionar o seu negócio!</p>
-                    <a href="https://wa.me/5584991651954" class="btn mt-4">Entre em contato</a>
+                    <a href="https://api.whatsapp.com/send?phone=5584991560738&text=Ol%C3%A1,%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HexLab!%20" class="btn mt-4">Entre em contato</a>
                 </div>
             </section>
 
@@ -146,7 +145,7 @@
                         Nós somos uma agência de desenvolvimento digital com berço potiguar que atua desenvolvendo sites em todo o território nacional.<br>
                         Com foco em desenvolvimento de sites modernos, bonitos, acessíveis, de baixa manutenção, com alta personalidade e foco em SEO, somos referência por onde atuamos.
                     </p>
-                    <a href="https://wa.me/5584991651954" class="btn secondary">Fale Conosco</a>
+                    <a href="https://api.whatsapp.com/send?phone=5584991560738&text=Ol%C3%A1,%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HexLab!%20" class="btn secondary">Fale Conosco</a>
 
                     <div class="pt-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
 
@@ -191,7 +190,7 @@
                         </div>
 
                         <div class="portfolio-card *:text-start *:transition-all *:duration-500 group">
-                            <a href="https://associacaoprover.org/" rel="opener" target="_blank">
+                            <a href="https://dragabrielanobrega.com.br/" rel="opener" target="_blank">
                             <div class="p-2 pb-3 group-hover:bg-white group-hover:shadow-md group-hover:p-2 group-hover:pb-3 rounded-xl group-hover:backdrop-blur-3xl group-hover:border group-hover:border-solid group-hover:border-white group-hover:bg-opacity-60">
                                 <img class="size-96 lg:size-80 object-cover rounded-lg" src="./assets/webp/gabriela-nobrega-thumb.webp" alt="Portfolio Thumbnail" loading="lazy" width="400" height="400">
                                 <span class="text-blue pt-4 font-medium text-sm block">Desenvolvimento e Performance</span>
@@ -360,14 +359,14 @@
                     © 2024 | Criado e Idealizado em pela HexLab Brasil.
                 </p>
                 <p>
-                    <a href="./privacidade">Política de Privacidade</a>
+                    <a href="./lgpd.html">Política de Privacidade</a>
                 </p>
             </div>
 
         </footer>
         
         <div class="whatsapp-button fixed bottom-10 right-10 z-20 bg-blend-hue">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=5584991651954&text=Ol%C3%A1,%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HexLab!%20" class="bg-blue size-12 *:size-8 sm:*:size-12 sm:size-20 flex justify-center items-center rounded-full hover:scale-95 hover:bg-blue-900 transition-all drop-shadow-2xl animate-float">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5584991560738&text=Ol%C3%A1,%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HexLab!%20" class="bg-blue size-12 *:size-8 sm:*:size-12 sm:size-20 flex justify-center items-center rounded-full hover:scale-95 hover:bg-blue-900 transition-all drop-shadow-2xl animate-float">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="https://www.w3.org/2000/svg">
                     <path d="M39.6874 10.2292C37.7774 8.29985 35.5024 6.77015 32.995 5.72928C30.4876 4.68841 27.7981 4.15722 25.0833 4.16667C13.7083 4.16667 4.43742 13.4375 4.43742 24.8125C4.43742 28.4583 5.39575 32 7.18742 35.125L4.27075 45.8333L15.2083 42.9583C18.2291 44.6042 21.6249 45.4792 25.0833 45.4792C36.4583 45.4792 45.7291 36.2083 45.7291 24.8333C45.7291 19.3125 43.5833 14.125 39.6874 10.2292ZM25.0833 41.9792C21.9999 41.9792 18.9791 41.1458 16.3333 39.5833L15.7083 39.2083L9.20825 40.9167L10.9374 34.5833L10.5208 33.9375C8.80772 31.202 7.89813 28.0401 7.89575 24.8125C7.89575 15.3542 15.6041 7.64584 25.0624 7.64584C29.6458 7.64584 33.9583 9.43751 37.1874 12.6875C38.7863 14.2791 40.0535 16.1722 40.9153 18.2571C41.7772 20.3421 42.2167 22.5773 42.2083 24.8333C42.2499 34.2917 34.5416 41.9792 25.0833 41.9792ZM34.4999 29.1458C33.9791 28.8958 31.4374 27.6458 30.9791 27.4583C30.4999 27.2917 30.1666 27.2083 29.8124 27.7083C29.4583 28.2292 28.4791 29.3958 28.1874 29.7292C27.8958 30.0833 27.5833 30.125 27.0624 29.8542C26.5416 29.6042 24.8749 29.0417 22.9166 27.2917C21.3749 25.9167 20.3541 24.2292 20.0416 23.7083C19.7499 23.1875 19.9999 22.9167 20.2708 22.6458C20.4999 22.4167 20.7916 22.0417 21.0416 21.75C21.2916 21.4583 21.3958 21.2292 21.5624 20.8958C21.7291 20.5417 21.6458 20.25 21.5208 20C21.3958 19.75 20.3541 17.2083 19.9374 16.1667C19.5208 15.1667 19.0833 15.2917 18.7708 15.2708H17.7708C17.4166 15.2708 16.8749 15.3958 16.3958 15.9167C15.9374 16.4375 14.6041 17.6875 14.6041 20.2292C14.6041 22.7708 16.4583 25.2292 16.7083 25.5625C16.9583 25.9167 20.3541 31.125 25.5208 33.3542C26.7499 33.8958 27.7083 34.2083 28.4583 34.4375C29.6874 34.8333 30.8124 34.7708 31.7083 34.6458C32.7083 34.5 34.7708 33.3958 35.1874 32.1875C35.6249 30.9792 35.6249 29.9583 35.4791 29.7292C35.3333 29.5 35.0208 29.3958 34.4999 29.1458Z" fill="white"/>
                 </svg>
