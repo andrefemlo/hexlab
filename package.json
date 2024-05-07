@@ -1,13 +1,14 @@
 {
-  "name": "template-tailwind-wordpress",
+  "name": "template-tailwind",
   "version": "1.0.0",
-  "description": "um template criado pra desenvolvedores da Colina Tech, em tailwindcss",
+  "description": "um template criado pra desenvolvimento de sites.",
   "main": "index.js",
-  "author": "Colina Tech",
+  "author": "André Melo",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.22.1",
     "@babel/preset-env": "^7.22.2",
+    "@vercel/speed-insights": "^1.0.10",
     "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
