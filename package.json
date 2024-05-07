@@ -8,6 +8,7 @@
   "dependencies": {
     "@babel/core": "^7.22.1",
     "@babel/preset-env": "^7.22.2",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",

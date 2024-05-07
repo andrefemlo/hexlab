@@ -1,7 +1,3 @@
-//Vercel SpeedInsights
-import { injectSpeedInsights } from '../@vercel/speed-insights';
-injectSpeedInsights();
-
 // AOS
 AOS.init({
   duration: 1000,
