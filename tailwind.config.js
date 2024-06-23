@@ -12,8 +12,6 @@ module.exports = {
         'yellow-400': '#FBAF00',
         'orange'    : '#E8871E',
       },
-      spacing: {
-      },
       fontFamily: {
         sans: ['Outfit', 'sans-serif']
       },
